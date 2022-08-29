@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>งานวิทยานิพนธ์ </title> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> 
+        <link rel="icon" type="image/x-icon" href="images/rsu-logo.png">
+        <link rel="stylesheet" href="css/adminlte.min.css"> 
+        <link rel="stylesheet" href="css/main.css">   
+
+         <!-- TABLE -->
+         <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css"> 
+         <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap4.min.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+ 
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/> 
+
+         
+    </head>
+    <body class="hold-transition sidebar-mini layout-fixed">
+        <div class="wrapper">
+            <!-- Preloader -->
+            <!-- <div class="preloader flex-column justify-content-center align-items-center">
+                <img class="animation__shake" src="images/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+            </div> -->
+            <!-- Navbar -->
+            <nav class="main-header navbar navbar-expand navbar-white navbar-light"> 
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                    </li> 
+                </ul> 
+                <ul class="navbar-nav ml-auto"> 
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                        <i class="fas fa-search"></i>
+                        </a>
+                        <div class="navbar-search-block">
+                            <form class="form-inline">
+                                <div class="input-group input-group-sm">
+                                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-navbar" type="submit">
+                                        <i class="fas fa-search"></i>
+                                        </button>
+                                        <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                        <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </li> 
+                </ul>
+            </nav> 
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+                <!-- Brand Logo -->
+                <a href="#" class="brand-link">
+                    <img src="images/sm-logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"  >
+                    <p class="brand-text font-weight-light">งานวิทยานิพนธ์ <br> มหาวิทยาลัยรังสิต</p>
+                </a> 
+                <div class="sidebar"> 
+                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                        <div class="image">
+                            <img src="images/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                        </div>
+                        <div class="info">
+                            <a href="#" class="d-block">เจ้าหน้าที่</a>
+                        </div>
+                    </div>  
+                    <nav class="mt-2">
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
+                            <li class="nav-item">
+                                <a href="student-list.html" class="nav-link">
+                                    <i class="nav-icon fal fa-poll-people"></i> 
+                                    <p>รายชื่อนักศึกษา </p>
+                                </a> 
+                            </li> 
+                            <li class="nav-item">
+                                <a href="directors-list.html" class="nav-link active">
+                                    <i class="nav-icon fas fa-user-check"></i>
+                                    <p>รายชื่อคณะกรรมการ</p>
+                                </a> 
+                            </li>  
+                            <li class="nav-item">
+                                <a href="advisors-list.html" class="nav-link">
+                                    <i class="nav-icon fal fa-poll-people"></i> 
+                                    <p>รายชื่ออาจารย์ที่ปรึกษา</p>
+                                </a> 
+                            </li>   
+
+                            
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> 
+                                    <i class="nav-icon far fa-cog"></i>
+                                    <p>
+                                        การตั้งค่า  
+                                        <i class="fas fa-angle-left right"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i class="far fa-user-chart"></i>
+                                            <p>####</p>
+                                        </a>
+                                    </li>   
+                                </ul>
+                            </li> 
+                        </ul>
+                    </nav> 
+                </div> 
+            </aside> 
+            <div class="content-wrapper"> 
+                <div class="content-header">
+                    <div class="container-fluid">
+                        <div class="row mb-2">
+                            <div class="col-sm-6">
+                                <h1 class="m-0">
+                                    <strong>รายชื่อคณะกรรมการสอบ</strong>  
+                                </h1> 
+                            </div>  
+                        </div> 
+                    </div> 
+                </div>  
+                <section class="content">
+                    <div class="container-fluid">
+                        <div class="div-box card-outline card-info p-4">
+                 
+            
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade show active" id="tab1">
+
+                                    <div class="col-12 search-label">
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="">ตำแหน่ง </label>
+                                                <select class="selectpicker w-100" title="ตำแหน่ง " data-show-subtext="true" data-live-search="true" name="year"  id="year">    
+                                                    <option selected>ตำแหน่ง </option> 
+                                                    <option selected>ตำแหน่ง </option> 
+                                                    <option selected>ตำแหน่ง </option> 
+                                                    <option selected>ตำแหน่ง </option> 
+                                                </select>
+                                            </div> 
+                                            <div class="col">
+                                                <label for="">สำนักงาน </label>
+                                                <select class="selectpicker w-100" title="สำนักงาน " data-show-subtext="true" data-live-search="true" name="year"  id="year" >    
+                                                    <option selected>ศูนย์บริการทางวิชาการ</option> 
+                                                    <option selected>ศูนย์บริการทางวิชาการ</option> 
+                                                    <option selected>ศูนย์บริการทางวิชาการ</option> 
+                                                    <option selected>ศูนย์บริการทางวิชาการ</option> 
+                                                </select>
+                                            </div>   
+                                            <div class="col">
+                                                <label for="">โทรศัพท์  </label>
+                                                <input type="text" class="form-control"  >
+                                            </div> 
+                                            <div class="col">
+                                                <label for="">อีเมล์   </label>
+                                                <input type="text" class="form-control"  >
+                                            </div>
+                                            <div class="col"> 
+                                                <label class="col-12">&nbsp; </label>
+                                                <button href="form-student-group.html" class="btn btn-primary btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
+                                                </button> 
+                                            </div> 
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="col-12 table-responsive" id="table-dex">
+                                       
+
+                                        <table id="tb-job" class="table table-striped  " style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th> 
+                                                    <th>ชื่อ</th>
+                                                    <th>ตำแหน่ง </th>
+                                                    <th>สำนักงาน </th>   
+                                                    <th>&nbsp;</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr> 
+                                                    <td>1</td> 
+                                                    <td>
+                                                        รศ อดิศร ศรีสุธรรม
+                                                    </td>
+                                                    <td> ผู้อำนวยการสถาบันวิจัย</td>
+                                                    <td>สถาบันวิจัย  </td>    
+                                                    <td>
+                                                        <a href="#" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
+                                                            <i class="far fa-id-badge"></i>
+                                                        </a>  
+                                                    </td>
+                                                </tr>  
+                                                <tr> 
+                                                    <td>2</td> 
+                                                    <td>
+                                                        รศ อดิศร ศรีสุธรรม
+                                                    </td>
+                                                    <td> ผู้อำนวยการสถาบันวิจัย</td>
+                                                    <td>สถาบันวิจัย  </td>        
+                                                    <td>
+                                                        <a href="#" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
+                                                            <i class="far fa-id-badge"></i>
+                                                        </a>  
+                                                    </td>
+                                                </tr>  
+                                                <tr> 
+                                                    <td>3</td> 
+                                                    <td>
+                                                        รศ อดิศร ศรีสุธรรม
+                                                    </td>
+                                                    <td> ผู้อำนวยการสถาบันวิจัย</td>
+                                                    <td>สถาบันวิจัย  </td>    
+                                                    <td>
+                                                        <a href="#" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
+                                                            <i class="far fa-id-badge"></i>
+                                                        </a>  
+                                                    </td>
+                                                </tr>   
+                                                <tr> 
+                                                    <td>4</td> 
+                                                    <td>
+                                                        รศ อดิศร ศรีสุธรรม
+                                                    </td>
+                                                    <td> ผู้อำนวยการสถาบันวิจัย</td>
+                                                    <td>สถาบันวิจัย  </td>        
+                                                    <td>
+                                                        <a href="student-description.html" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
+                                                            <i class="far fa-id-badge"></i>
+                                                        </a>  
+                                                    </td>
+                                                </tr> 
+                                                <tr> 
+                                                    <td>5</td> 
+                                                    <td>
+                                                        รศ อดิศร ศรีสุธรรม
+                                                    </td>
+                                                    <td> ผู้อำนวยการสถาบันวิจัย</td>
+                                                    <td>สถาบันวิจัย  </td>        
+                                                    <td>
+                                                        <a href="#" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
+                                                            <i class="far fa-id-badge"></i>
+                                                        </a>  
+                                                    </td>
+                                                </tr>   
+                                                <tr> 
+                                                    <td>6</td> 
+                                                    <td>
+                                                        รศ อดิศร ศรีสุธรรม
+                                                    </td>
+                                                    <td> ผู้อำนวยการสถาบันวิจัย</td>
+                                                    <td>สถาบันวิจัย  </td>       
+                                                    <td>
+                                                        <a href="#" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
+                                                            <i class="far fa-id-badge"></i>
+                                                        </a>  
+                                                    </td>
+                                                </tr>                                                      
+                                            </tbody> 
+                                        </table>
+                                    </div>
+                                </div> 
+                            </div>       
+                        </div>
+                    </div> 
+                </section> 
+            </div> 
+            <footer class="main-footer">
+                ระบบสมัครเรียน ออนไลน์ 
+                <div class="float-right d-none d-sm-inline-block">
+                    <b>Version</b> 1.1
+                </div>
+            </footer>  
+        </div> 
+
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+        <script src="js/adminlte.js"></script> 
+
+        <!-- TABLE -->
+        <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script> 
+        <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script> 
+        <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script> 
+        <script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap4.min.js"></script> 
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js" integrity="sha512-cp+S0Bkyv7xKBSbmjJR0K7va0cor7vHYhETzm2Jy//ZTQDUvugH/byC4eWuTii9o5HN9msulx2zqhEXWau20Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+            var ctx2 = document.getElementById('myChartTab21').getContext('2d');
+            var myChart = new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน' , 'พฤษภาคม' , 'มิถุนายน', 'กรกฎาคม', 'สิงหาคม' , 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'],
+                    datasets: [
+                    {
+                        label: "พักการศึกษา", 
+                        backgroundColor: 'rgba(255, 99, 132, 1)',
+                        data: [1,7,2,3,4,9,5,4,3,2,11,16]
+                    }, 
+                    {
+                        label: "จบการศึกษา",
+                        backgroundColor: 'rgba(75, 192, 192, 1)',
+                        data: [3,4,1,1,2,9,5,6,7,3,8,6]
+                    },
+                    {
+                        label: "สถานะการย้ายกลุ่ม",
+                        backgroundColor: 'rgba(255, 206, 86, 1)',
+                        data: [12,7,14,12,7,1,4,13,4,11,3]
+                    } 
+                ]
+
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        </script>
+
+    </body>
+</html>
